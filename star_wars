@@ -1,0 +1,81 @@
+mkdir star_wars
+cd star_wars
+mkdir the_empire
+mkdir the_rebellion
+mkdir tatooine
+mkdir millenium_falcon
+mkdir death_star
+mkdir x_wing
+mkdir tie_fighter
+
+nano luke_skywalker.txt
+nano old_man_ben.txt
+nano darth_vader.txt
+nano emperor.txt
+nano han_solo.txt
+nano chewbacca.txt
+nano lea_organa.txt
+
+nano darth_vader.txt #Write "I AM NOT LORD HELMET" within nano
+echo 'I am your papa' >darth_vader.txt
+echo 'I used to be beautiful, but then I took an arrow to the knee' >emperor.txt
+
+mv darth_vader.txt the_empire
+mv emperor.txt the_empire
+mv luke_skywalker.txt tatooine
+mv old_man_ben.txt tatooine
+
+cd tatooine
+mv old_man_ben.txt obi_wan_kenobi.txt
+
+cd
+cd star_wars
+mv han_solo.txt tatooine
+mv chewbacca.txt tatooine
+
+cd the_empire
+mv darth_vader.txt  ~/star_wars/death_star
+mv emperor.txt  ~/star_wars/death_star
+
+cd
+cd star_wars
+cd death_star
+echo "I AM NOT LORD HELMET"> darth_vader.txt
+
+cd ~/star_wars/tatooine
+mv luke_skywalker.txt ~/star_wars/millenium_falcon
+mv chewbacca.txt ~/star_wars/millenium_falcon
+mv han_solo.txt ~/star_wars/millenium_falcon
+mv obi_wan_kenobi.txt ~/star_wars/millenium_falcon
+
+cd ~/star_wars
+mv leia_organa.txt ~/star_wars/death_star
+
+cd ~/star_wars/millenium_falcon
+mv luke_skywalker.txt ~/star_wars/death_star
+mv chewbacca.txt ~/star_wars/death_star
+mv han_solo.txt ~/star_wars/death_star
+mv obi_wan_kenobi.txt ~/star_wars/death_star
+
+cd ~/star_wars/death_star
+rm obi_wan_kenobi.txt
+mv luke_skywalker.txt ~/star_wars/millenium_falcon
+mv leia_organa.txt ~/star_wars/millenium_falcon
+mv han_solo.txt ~/star_wars/millenium_falcon
+mv chewbacca.txt ~/star_wars/millenium_falcon
+
+cd ~/star_wars/millenium_falcon
+mv luke_skywalker.txt ~/star_wars/x_wing
+mv lear_organa.txt ~/star_wars
+
+cd ~/star_wars/death_star
+mv darth_vader.txt ~/star_wars/tie_fighter
+
+cd ~/star_wars
+rm -rf death_star
+
+
+
+
+
+
